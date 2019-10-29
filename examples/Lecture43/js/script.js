@@ -3,17 +3,27 @@ var string = "Hello";
 // string += " World";
 string = string + " World";
 console.log(string + "!");
-
+//output 'hello world!'
 
 
 
 // ***** Regular math operators: +, -, *, /
 console.log((5 + 4) / 3);
 console.log(undefined / 5);
-function test1 (a) {
-  console.log( a / 5);
+function test1(a) {
+  console.log(a / 5);
 }
 test1();
+
+/* So when you debug your code and you call a function,
+ and somewhere inside the function, something starts 
+ throwing not a number. Chances are that there's something 
+ that was supposed to be passed in into that function, 
+ and either not neglected to be passed in or something 
+ happened to it along the way right before it was supposed to 
+ be passed in, and then you have an undefined variable inside your function.
+  NaN - not an number 
+ */
 
 
 
@@ -39,7 +49,7 @@ if (x === y) {
 }
 else {
   console
-  .log("Strict: x='4' is NOT equal to y=4");
+    .log("Strict: x='4' is NOT equal to y=4");
 }
 
 
@@ -48,12 +58,12 @@ else {
 
 
 // ***** If statement (all false)
-if ( false || null || 
-     undefined || "" || 0 || NaN) {
+if (false || null ||
+  undefined || "" || 0 || NaN) {
   console.log("This line won't ever execute");
 }
 else {
-  console.log ("All false");
+  console.log("All false");
 }
 
 // ***** If statement (all true)
@@ -68,17 +78,16 @@ if (true && "hello" && 1 && -1 && "false") {
 // ***** Best practice for {} style
 // Curly brace on the same or next line...
 // Is it just a style?
-function a() 
-{
+function a() {
   return
-  { 
+  {
     name: "Yaakov"
   };
 }
 
 function b() {
-  return { 
-      name: "Yaakov"
+  return {
+    name: "Yaakov"
   };
 }
 
